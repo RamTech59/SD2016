@@ -1,0 +1,26 @@
+solids have centers
+solids have area
+solids have velocities in the y/x directions(can be 0)
+gear inherits from solids
+rods inhreits from solids
+shapes inherits from solids
+there are different types of shapes(probably up till hexagon, maybe octagon, if possible n-gon) we also assume that all shapes are perfect (meaning we ask the distance between the center of the shape to the center of one of its faces (all of these distances should be equal))
+two types of solids(free vs. bound)
+free solids have a force of 9.81m/s*objects area(probably translated to pixels/sec or the likes) downward
+bound solids have at least one point which does not change(usually center)
+gear rotates about center
+if solids collide(meaning that a point on the border of a solid is the same as a point on the border of another) then we figure out it what the colliding solid types are(free vs. bound)
+if a free solid collides with a bound solid then it deflects at (180 - angle of attack) with a smaller velocity(gotta figure out equation for energy loss)
+if free solids collide head on(meaning that one has a positive force while the other has a negative force) then they bounce at theyre own (180 - angle of attack) with the velocities inverted
+if two or more bound solids collide(gears for the most part) then we figure out how fast they are rotating and add theyre speeds if they are both the same sign(and set that as the speed for the driven gear(one with less force)) and subtract for different signs(and make that the speed of both gears)
+user can make a certain point fixed
+user can create new objects
+user can resize objects
+when user creates new objects he/she must put in the cordinates for the vertecies of the object
+user can rotate objects along their center
+simulation is paused untill user presses start which will trigger physics and block user interaction untill stop
+user decides weather object is free or bound
+user decides weather a point on a solid is bound to a point on another solid meaning that(position of point in solid two = position of point in solid one but neither is static)
+if point is bound to the background(no other solids), point is static
+there is a border(so that free objects dont fall into space)
+
