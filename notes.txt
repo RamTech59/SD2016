@@ -19,8 +19,8 @@ user can resize objects
 when user creates new objects he/she must put in the cordinates for the vertecies of the object
 user can rotate objects along their center
 simulation is paused untill user presses start which will trigger physics and block user interaction untill stop
-user decides weather object is free or bound
-user decides weather a point on a solid is bound to a point on another solid meaning that(position of point in solid two = position of point in solid one but neither is static)
+user decides whether object is free or bound
+user decides whether a point on a solid is bound to a point on another solid meaning that(position of point in solid two = position of point in solid one but neither is static)
 if point is bound to the background(no other solids), point is static
 there is a border(so that free objects dont fall into space)
 
