@@ -1,0 +1,8 @@
+[package]
+name = "test"
+version = "0.1.0"
+authors = ["Bryan <Bpadron2000@gmail.com>", "Luis <wingsoverglades@gmail.com>"]
+
+[dependencies]
+glium = "*"
+image = "*"
